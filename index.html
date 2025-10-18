@@ -338,60 +338,49 @@
     </div>
 
     <!-- Sample Documents Modal -->
-<div class="modal fade" id="sampleModal" tabindex="-1" aria-labelledby="sampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="sampleModalLabel">
-                    <i class="fas fa-file-alt me-2"></i>Sample Documents
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-
-            <div class="modal-body">
-                <p class="mb-4">Try our AI analyzer with these real sample legal documents:</p>
-
-                <div class="sample-documents">
-                    <!-- 🧾 Sample File 1 -->
-                    <div class="sample-doc text-center p-3 border rounded mb-3">
-                        <i class="fas fa-file-pdf text-danger fa-3x mb-2"></i>
-                        <div class="sample-info">
-                            <h6>Church Loans Document</h6>
-                            <button class="btn btn--primary btn-sm mt-2"
-                                onclick="loadSampleDocument('samples/Church_loans.pdf', 'Church_loans.pdf')">
-                                <i class="fas fa-brain me-1"></i> Analyze This Document
-                            </button>
+    <div class="modal fade" id="sampleModal" tabindex="-1" aria-labelledby="sampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sampleModalLabel">
+                        <i class="fas fa-file-alt me-2"></i>Sample Documents
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-4">Try our AI analyzer with these sample legal documents to see how it works:</p>
+                    <div class="sample-documents">
+                        <div class="sample-doc" data-sample="contract">
+                            <i class="fas fa-file-pdf text-danger"></i>
+                            <div class="sample-info">
+                                <h6>Contract Agreement Template</h6>
+                                <p>2.4 MB PDF • 10 Legal Clauses</p>
+                                <small>Contains standard contract provisions including terms, payments, and liability clauses</small>
+                            </div>
+                        </div>
+                        <div class="sample-doc" data-sample="brief">
+                            <i class="fas fa-file-word text-primary"></i>
+                            <div class="sample-info">
+                                <h6>Legal Brief Document</h6>
+                                <p>1.8 MB DOCX • 5 Sections</p>
+                                <small>Structured legal brief with arguments, case law, and conclusions</small>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- 🧾 Sample File 2 -->
-                    <div class="sample-doc text-center p-3 border rounded mb-3">
-                        <i class="fas fa-file-word text-primary fa-3x mb-2"></i>
-                        <div class="sample-info">
-                            <h6>Stock Purchase Document</h6>
-                            <button class="btn btn--primary btn-sm mt-2"
-                                onclick="loadSampleDocument('samples/Stock_purchase.pdf', 'Stock_purchase.pdf')">
-                                <i class="fas fa-brain me-1"></i> Analyze This Document
-                            </button>
-                        </div>
+                    <div class="alert alert-info mt-3">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Note:</strong> These are simulated documents for demonstration purposes. Real analysis would process actual uploaded files.
                     </div>
                 </div>
-
-                <div class="alert alert-info mt-3">
-                    <i class="fas fa-info-circle me-2"></i>
-                    <strong>Note:</strong> Click <em>Analyze This Document</em> to upload and start AI analysis instantly.
+                <div class="modal-footer">
+                    <button type="button" class="btn btn--secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn--outline" onclick="document.getElementById('fileInput').click(); bootstrap.Modal.getInstance(document.getElementById('sampleModal')).hide();">
+                        <i class="fas fa-upload me-1"></i>Upload Your Own
+                    </button>
                 </div>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn--secondary" data-bs-dismiss="modal">Close</button>
-                <label for="fileInput" class="btn btn--outline mb-0">
-                    <i class="fas fa-upload me-1"></i>Upload Your Own
-                </label>
             </div>
         </div>
     </div>
-</div>
 
     <!-- Custom Format Modal -->
     <div class="modal fade" id="customFormatModal" tabindex="-1" aria-labelledby="customFormatModalLabel" aria-hidden="true">
