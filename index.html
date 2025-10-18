@@ -352,26 +352,34 @@
                 <p class="mb-4">Try our AI analyzer with these real sample legal documents:</p>
 
                 <div class="sample-documents">
-                    <!-- 🆕 Sample File 1 -->
-                    <div class="sample-doc" onclick="window.open('Church_loans.pdf')">
-                        <i class="fas fa-file-pdf text-danger"></i>
+                    <!-- 🧾 Sample File 1 -->
+                    <div class="sample-doc text-center p-3 border rounded mb-3">
+                        <i class="fas fa-file-pdf text-danger fa-3x mb-2"></i>
                         <div class="sample-info">
                             <h6>Church Loans Document</h6>
+                            <button class="btn btn--primary btn-sm mt-2"
+                                onclick="loadSampleDocument('samples/Church_loans.pdf', 'Church_loans.pdf')">
+                                <i class="fas fa-brain me-1"></i> Analyze This Document
+                            </button>
                         </div>
                     </div>
 
-                    <!-- 🆕 Sample File 2 -->
-                    <div class="sample-doc" onclick="window.open('Stock_purchase.pdf')">
-                        <i class="fas fa-file-word text-primary"></i>
+                    <!-- 🧾 Sample File 2 -->
+                    <div class="sample-doc text-center p-3 border rounded mb-3">
+                        <i class="fas fa-file-word text-primary fa-3x mb-2"></i>
                         <div class="sample-info">
                             <h6>Stock Purchase Document</h6>
+                            <button class="btn btn--primary btn-sm mt-2"
+                                onclick="loadSampleDocument('samples/Stock_purchase.pdf', 'Stock_purchase.pdf')">
+                                <i class="fas fa-brain me-1"></i> Analyze This Document
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <div class="alert alert-info mt-3">
                     <i class="fas fa-info-circle me-2"></i>
-                    <strong>Note:</strong> Click on a file to view or download it. These documents are stored in the <code>samples/</code> folder.
+                    <strong>Note:</strong> Click <em>Analyze This Document</em> to upload and start AI analysis instantly.
                 </div>
             </div>
 
