@@ -124,7 +124,7 @@ header, main > div, #chatModal, #helpModalContent {
                         <span class="w-6 h-6 bg-indigo-500 text-white rounded-full flex items-center justify-center text-sm mr-2">1</span>
                         Upload Document
                     </h3>
-                    <input type="file" id="fileInput" accept=".txt,.md" class="block w-full text-sm text-gray-500
+                    <input type="file" id="fileInput" accept=".txt,.md,.pdf,.docx" class="block w-full text-sm text-gray-500
                         file:mr-4 file:py-2 file:px-4
                         file:rounded-full file:border-0
                         file:text-sm file:font-semibold
@@ -132,7 +132,7 @@ header, main > div, #chatModal, #helpModalContent {
                         hover:file:bg-indigo-100"
                         onchange="document.getElementById('analyzeBtn').disabled = !this.files.length"
                     >
-                    <p class="text-xs text-gray-500 mt-2">Only .txt or .md files are supported for text-based analysis.</p>
+                    <p class="text-xs text-gray-500 mt-2">Only .txt, .pdf ,.docx, .md files are supported for text-based analysis.</p>
                     
                     <button id="loadSampleBtn" class="w-full mt-4 bg-gray-600 text-white py-2 rounded-xl font-bold hover:bg-gray-700 transition-colors duration-200 shadow-md">
                         <i class="fas fa-file-alt mr-2"></i> Load Sample Loan Agreement
